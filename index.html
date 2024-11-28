@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robotics Club Registration Form</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url("robot.jpg");
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      overflow-x: hidden;
+    }
+    .form-container {
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      width: 90%;
+      max-width: 1000px;
+    }
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #f1c40f;
+    }
+    .btn-primary {
+      background-color: #f1c40f;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #e1b000;
+    }
+    .form-group label {
+      color: #d1d1d1;
+    }
+    select, input, textarea {
+      background-color: #0f3460;
+      color: #ffffff;
+      border: 1px solid #f1c40f;
+    }
+    @media (max-width: 768px) {
+      .form-row .col-md-6 {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Robotics Club Registration Form</h2>
+    <form novalidate>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="age">Age</label>
+          <input type="number" class="form-control" id="age" placeholder="Enter your age">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="email">Email Address</label>
+          <input type="text" class="form-control" id="email" placeholder="Enter your email address">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="phone">Phone Number</label>
+          <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Preferred Robotics Topics</label>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="programming">
+          <label class="form-check-label" for="programming">Programming</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="electronics">
+          <label class="form-check-label" for="electronics">Electronics</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="mechanical-design">
+          <label class="form-check-label" for="mechanical-design">Mechanical Design</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Robotics Experience Level</label>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="experience" id="beginner" value="beginner">
+          <label class="form-check-label" for="beginner">Beginner</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="experience" id="intermediate" value="intermediate">
+          <label class="form-check-label" for="intermediate">Intermediate</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="experience" id="advanced" value="advanced">
+          <label class="form-check-label" for="advanced">Advanced</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="project">Preferred Robotics Project</label>
+        <select class="form-control" id="project">
+          <option value="">Choose a project...</option>
+          <option value="autonomous-vehicles">Autonomous Vehicles</option>
+          <option value="robot-arm-design">Robot Arm Design</option>
+          <option value="ai-powered-robots">AI-Powered Robots</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="interest">Statement of Interest</label>
+        <textarea class="form-control" id="interest" rows="3" placeholder="Share why you're interested in robotics"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Submit</button>
+    </form>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
